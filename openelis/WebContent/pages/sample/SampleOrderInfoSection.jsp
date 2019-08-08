@@ -41,7 +41,7 @@
     trackPayment = ConfigurationProperties.getInstance().isPropertyValueEqual(Property.trackPatientPayment, "true");
     accessionNumberValidator = new AccessionNumberValidatorFactory().getValidator();
     requesterLastNameRequired = FormFields.getInstance().useField(Field.SampleEntryRequesterLastNameRequired);
-    supportfirstNameFirst = FormFields.getInstance().useField(Field.FirstNameFirst);
+    supportfirstNameFirst = Boolean.FALSE;
 
 
 %>

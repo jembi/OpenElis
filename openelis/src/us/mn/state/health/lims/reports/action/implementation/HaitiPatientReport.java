@@ -479,7 +479,7 @@ public abstract class HaitiPatientReport extends Report {
 
     protected void setPatientName(HaitiClinicalPatientData data) {
         if (reportPatient != null) {
-            data.setPatientName(reportPatient.getPerson().getFirstName() + " " + reportPatient.getPerson().getLastName());
+            data.setPatientName(reportPatient.getPerson().getLastName() + " " + reportPatient.getPerson().getFirstName());
             data.setFirstName(reportPatient.getPerson().getFirstName());
             data.setLastName(reportPatient.getPerson().getLastName());
         }
