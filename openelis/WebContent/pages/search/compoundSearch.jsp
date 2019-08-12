@@ -35,7 +35,7 @@ basePath = path + "/";
 	supportSTNumber = FormFields.getInstance().useField(Field.StNumber);
  	supportSubjectNumber = FormFields.getInstance().useField(Field.SubjectNumber);
  	supportNationalID = FormFields.getInstance().useField(Field.NationalID);
- 	supportFirstNameFirst = FormFields.getInstance().useField(Field.FirstNameFirst);
+ 	supportFirstNameFirst = Boolean.FALSE;
 %>
 
 <script type="text/javascript" src="<%=basePath%>scripts/utilities.js?ver=<%= Versioning.getBuildNumber() %>" ></script>

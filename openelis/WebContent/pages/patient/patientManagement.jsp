@@ -65,7 +65,7 @@
 	supportMothersInitial = FormFields.getInstance().useField(Field.MotherInitial);
 	supportAddressDepartment = FormFields.getInstance().useField(Field.AddressDepartment );
     supportDynamicAddresses = FormFields.getInstance().useField(Field.DynamicAddress);
-    supportfirstNameFirst = FormFields.getInstance().useField(Field.FirstNameFirst);
+    supportfirstNameFirst = Boolean.FALSE;
     supportPrimaryRelative = FormFields.getInstance().useField(Field.SupportPrimaryRelative);
 
 	if("SampleConfirmationEntryForm".equals( formName )){

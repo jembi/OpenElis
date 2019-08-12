@@ -43,7 +43,7 @@
 	accessionNumberValidator = new AccessionNumberValidatorFactory().getValidator();
 	String path = request.getContextPath();
     basePath = path + "/";
-	supportfirstNameFirst = FormFields.getInstance().useField(Field.FirstNameFirst);
+	supportfirstNameFirst = Boolean.FALSE;
   %>
 
 <link rel="stylesheet" href="css/bahmni.css?ver=<%= Versioning.getBuildNumber() %>">
