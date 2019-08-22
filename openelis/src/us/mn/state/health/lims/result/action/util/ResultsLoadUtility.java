@@ -339,16 +339,16 @@ public class ResultsLoadUtility {
 
     private String getDisplayNameForCurrentPatient(String firstName ,String lastName) {
         StringBuilder nameBuilder = new StringBuilder();
-        if (!GenericValidator.isBlankOrNull(firstName)) {
-            nameBuilder.append(firstName);
+        if (!GenericValidator.isBlankOrNull(lastName)) {
+            nameBuilder.append(lastName);
         }
 
-        if (!GenericValidator.isBlankOrNull(lastName)) {
+        if (!GenericValidator.isBlankOrNull(firstName)) {
             if (nameBuilder.length() > 0) {
                 nameBuilder.append(" ");
             }
 
-            nameBuilder.append(lastName);
+            nameBuilder.append(firstName);
         }
 
         return nameBuilder.toString();

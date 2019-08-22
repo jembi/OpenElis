@@ -269,7 +269,7 @@ basePath = path + "/";
     var showPatientDetails = function(stNumber, firstName, middleName, lastName, primaryRelative, village, gender, age) {
         jQuery("#patientDetails").show();
         jQuery("#patientId").text(stNumber);
-        jQuery("#name").text(firstName + " " + (middleName ? middleName + " " : "") + lastName);
+        jQuery("#name").text(lastName + " " + firstName);
         jQuery("#primaryRelative").text(primaryRelative?primaryRelative:"N/A");
         jQuery("#village").text(village?village:"N/A");
         jQuery("#gender").text(gender);
